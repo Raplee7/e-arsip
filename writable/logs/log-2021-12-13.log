@@ -1,0 +1,54 @@
+CRITICAL - 2021-12-13 01:43:33 --> Invalid file: layout/v_wrapper.php
+#0 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/v_wrappe...')
+#1 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#2 C:\xampp\htdocs\TugasUAS\app\Controllers\Home.php(13): view('layout/v_wrappe...', Array)
+#3 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\TugasUAS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-13 01:43:35 --> Invalid file: layout/v_wrapper.php
+#0 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/v_wrappe...')
+#1 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#2 C:\xampp\htdocs\TugasUAS\app\Controllers\Home.php(13): view('layout/v_wrappe...', Array)
+#3 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\TugasUAS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-12-13 01:51:30 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2021-12-13 01:51:30 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\TugasUAS\app\Models\Model_auth.php(14): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\TugasUAS\app\Controllers\Auth.php(44): App\Models\Model_auth->login('raflimarianm@gm...', '12200964')
+#4 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Auth->login()
+#5 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\TugasUAS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-12-13 02:27:49 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2021-12-13 02:27:49 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\TugasUAS\app\Models\Model_auth.php(14): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\TugasUAS\app\Controllers\Auth.php(44): App\Models\Model_auth->login('raflimarianm@gm...', '12200964')
+#4 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Auth->login()
+#5 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\TugasUAS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-12-13 02:30:37 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2021-12-13 02:30:37 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\TugasUAS\app\Models\Model_auth.php(14): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\TugasUAS\app\Controllers\Auth.php(44): App\Models\Model_auth->login('raflimarianm@gm...', '12200964')
+#4 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Auth->login()
+#5 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\TugasUAS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
