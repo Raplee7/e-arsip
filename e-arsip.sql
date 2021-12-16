@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 13, 2021 at 06:15 AM
--- Server version: 10.4.18-MariaDB
--- PHP Version: 8.0.3
+-- Waktu pembuatan: 16 Des 2021 pada 06.42
+-- Versi server: 10.4.21-MariaDB
+-- Versi PHP: 7.4.23
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_arsip`
+-- Struktur dari tabel `tbl_arsip`
 --
 
 CREATE TABLE `tbl_arsip` (
@@ -43,18 +43,27 @@ CREATE TABLE `tbl_arsip` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_departemen`
+-- Struktur dari tabel `tbl_dep`
 --
 
-CREATE TABLE `tbl_departemen` (
+CREATE TABLE `tbl_dep` (
   `id_dep` int(11) NOT NULL,
   `nama_dep` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data untuk tabel `tbl_dep`
+--
+
+INSERT INTO `tbl_dep` (`id_dep`, `nama_dep`) VALUES
+(1, 'Keuangan'),
+(2, 'Humas'),
+(3, 'Pemasaran');
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_kategori`
+-- Struktur dari tabel `tbl_kategori`
 --
 
 CREATE TABLE `tbl_kategori` (
@@ -62,10 +71,17 @@ CREATE TABLE `tbl_kategori` (
   `nama_kategori` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data untuk tabel `tbl_kategori`
+--
+
+INSERT INTO `tbl_kategori` (`id_kategori`, `nama_kategori`) VALUES
+(2, 'Arsip Umum');
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_user`
+-- Struktur dari tabel `tbl_user`
 --
 
 CREATE TABLE `tbl_user` (
@@ -75,71 +91,73 @@ CREATE TABLE `tbl_user` (
   `password` varchar(255) DEFAULT NULL,
   `level` int(1) DEFAULT NULL,
   `foto` varchar(255) DEFAULT NULL,
-  `id_departemen` int(11) DEFAULT NULL
+  `id_dep` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tbl_user`
+-- Dumping data untuk tabel `tbl_user`
 --
 
-INSERT INTO `tbl_user` (`id_user`, `nama_user`, `email`, `password`, `level`, `foto`, `id_departemen`) VALUES
-(1, 'Rafli Marian Mirza', 'raflimarianm@gmail.com', '12200964', 1, 'user1.png', 1);
+INSERT INTO `tbl_user` (`id_user`, `nama_user`, `email`, `password`, `level`, `foto`, `id_dep`) VALUES
+(1, 'Rafli Marian Mirza', 'raflimarianm@gmail.com', '12200964', 1, 'user 1.jpg', 1),
+(2, 'Teguh', 'teguh@gmail.com', '1234', 2, 'user.jpg', 2),
+(3, 'Dani', 'dani@gmail.com', '1234', 2, 'user 1.jpg', 2);
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `tbl_arsip`
+-- Indeks untuk tabel `tbl_arsip`
 --
 ALTER TABLE `tbl_arsip`
   ADD PRIMARY KEY (`id_arsip`);
 
 --
--- Indexes for table `tbl_departemen`
+-- Indeks untuk tabel `tbl_dep`
 --
-ALTER TABLE `tbl_departemen`
+ALTER TABLE `tbl_dep`
   ADD PRIMARY KEY (`id_dep`);
 
 --
--- Indexes for table `tbl_kategori`
+-- Indeks untuk tabel `tbl_kategori`
 --
 ALTER TABLE `tbl_kategori`
   ADD PRIMARY KEY (`id_kategori`);
 
 --
--- Indexes for table `tbl_user`
+-- Indeks untuk tabel `tbl_user`
 --
 ALTER TABLE `tbl_user`
   ADD PRIMARY KEY (`id_user`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `tbl_arsip`
+-- AUTO_INCREMENT untuk tabel `tbl_arsip`
 --
 ALTER TABLE `tbl_arsip`
   MODIFY `id_arsip` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `tbl_departemen`
+-- AUTO_INCREMENT untuk tabel `tbl_dep`
 --
-ALTER TABLE `tbl_departemen`
-  MODIFY `id_dep` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `tbl_dep`
+  MODIFY `id_dep` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `tbl_kategori`
+-- AUTO_INCREMENT untuk tabel `tbl_kategori`
 --
 ALTER TABLE `tbl_kategori`
-  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `tbl_user`
+-- AUTO_INCREMENT untuk tabel `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
