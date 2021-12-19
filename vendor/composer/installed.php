@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '915b393ae540a9b946b027302b827e249e892b6c',
+        'reference' => '84b010cda2ae453425c4065da1bb36bb09acb4c9',
         'name' => 'codeigniter4/appstarter',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '915b393ae540a9b946b027302b827e249e892b6c',
+            'reference' => '84b010cda2ae453425c4065da1bb36bb09acb4c9',
             'dev_requirement' => false,
         ),
         'codeigniter4/framework' => array(
@@ -365,12 +365,12 @@
             'dev_requirement' => true,
         ),
         'symfony/deprecation-contracts' => array(
-            'pretty_version' => 'v3.0.0',
-            'version' => '3.0.0.0',
+            'pretty_version' => 'v2.5.0',
+            'version' => '2.5.0.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/deprecation-contracts',
             'aliases' => array(),
-            'reference' => 'c726b64c1ccfe2896cb7df2e1331c357ad1c8ced',
+            'reference' => '6f981ee24cf69ee7ce9736146d1c57c2780598a8',
             'dev_requirement' => true,
         ),
         'symfony/polyfill-ctype' => array(
