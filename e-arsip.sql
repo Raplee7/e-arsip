@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 16 Des 2021 pada 06.42
--- Versi server: 10.4.21-MariaDB
--- Versi PHP: 7.4.23
+-- Generation Time: Dec 19, 2021 at 07:41 AM
+-- Server version: 10.4.18-MariaDB
+-- PHP Version: 8.0.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_arsip`
+-- Table structure for table `tbl_arsip`
 --
 
 CREATE TABLE `tbl_arsip` (
@@ -36,14 +36,14 @@ CREATE TABLE `tbl_arsip` (
   `tgl_upload` date DEFAULT NULL,
   `tgl_update` date DEFAULT NULL,
   `file_arsip` varchar(255) DEFAULT NULL,
-  `id_depatemen` int(11) DEFAULT NULL,
+  `id_dep` int(11) DEFAULT NULL,
   `id_user` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_dep`
+-- Table structure for table `tbl_dep`
 --
 
 CREATE TABLE `tbl_dep` (
@@ -52,7 +52,7 @@ CREATE TABLE `tbl_dep` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tbl_dep`
+-- Dumping data for table `tbl_dep`
 --
 
 INSERT INTO `tbl_dep` (`id_dep`, `nama_dep`) VALUES
@@ -63,7 +63,7 @@ INSERT INTO `tbl_dep` (`id_dep`, `nama_dep`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_kategori`
+-- Table structure for table `tbl_kategori`
 --
 
 CREATE TABLE `tbl_kategori` (
@@ -72,7 +72,7 @@ CREATE TABLE `tbl_kategori` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tbl_kategori`
+-- Dumping data for table `tbl_kategori`
 --
 
 INSERT INTO `tbl_kategori` (`id_kategori`, `nama_kategori`) VALUES
@@ -81,7 +81,7 @@ INSERT INTO `tbl_kategori` (`id_kategori`, `nama_kategori`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_user`
+-- Table structure for table `tbl_user`
 --
 
 CREATE TABLE `tbl_user` (
@@ -95,7 +95,7 @@ CREATE TABLE `tbl_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tbl_user`
+-- Dumping data for table `tbl_user`
 --
 
 INSERT INTO `tbl_user` (`id_user`, `nama_user`, `email`, `password`, `level`, `foto`, `id_dep`) VALUES
@@ -108,53 +108,53 @@ INSERT INTO `tbl_user` (`id_user`, `nama_user`, `email`, `password`, `level`, `f
 --
 
 --
--- Indeks untuk tabel `tbl_arsip`
+-- Indexes for table `tbl_arsip`
 --
 ALTER TABLE `tbl_arsip`
   ADD PRIMARY KEY (`id_arsip`);
 
 --
--- Indeks untuk tabel `tbl_dep`
+-- Indexes for table `tbl_dep`
 --
 ALTER TABLE `tbl_dep`
   ADD PRIMARY KEY (`id_dep`);
 
 --
--- Indeks untuk tabel `tbl_kategori`
+-- Indexes for table `tbl_kategori`
 --
 ALTER TABLE `tbl_kategori`
   ADD PRIMARY KEY (`id_kategori`);
 
 --
--- Indeks untuk tabel `tbl_user`
+-- Indexes for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
   ADD PRIMARY KEY (`id_user`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `tbl_arsip`
+-- AUTO_INCREMENT for table `tbl_arsip`
 --
 ALTER TABLE `tbl_arsip`
   MODIFY `id_arsip` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `tbl_dep`
+-- AUTO_INCREMENT for table `tbl_dep`
 --
 ALTER TABLE `tbl_dep`
   MODIFY `id_dep` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT untuk tabel `tbl_kategori`
+-- AUTO_INCREMENT for table `tbl_kategori`
 --
 ALTER TABLE `tbl_kategori`
   MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT untuk tabel `tbl_user`
+-- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
   MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
