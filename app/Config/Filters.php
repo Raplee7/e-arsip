@@ -43,6 +43,7 @@ class Filters extends BaseConfig
 				'kategori', 'kategori/*',
                 'dep', 'dep/*',
                 'user', 'user/*',
+                'arsip', 'arsip/*',
 			]],
 			'toolbar',
 			//'honeypot'
