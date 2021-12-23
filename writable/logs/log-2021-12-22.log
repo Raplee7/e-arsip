@@ -1,0 +1,200 @@
+CRITICAL - 2021-12-22 02:25:05 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('user')
+#1 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('user')
+#2 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\TugasUAS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-22 02:28:51 --> strpos(): Offset not contained in string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strpos(): Offse...', 'C:\\xampp\\htdocs...', 702, Array)
+#1 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Validation\Validation.php(702): strpos('uploaded[foto]|...', '|', 91)
+#2 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Validation\Validation.php(138): CodeIgniter\Validation\Validation->splitRules(Array)
+#3 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#4 C:\xampp\htdocs\TugasUAS\app\Controllers\User.php(41): CodeIgniter\Controller->validate(Array)
+#5 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\User->insert()
+#6 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\TugasUAS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-22 02:43:34 --> strpos(): Offset not contained in string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strpos(): Offse...', 'C:\\xampp\\htdocs...', 702, Array)
+#1 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Validation\Validation.php(702): strpos('uploaded[foto]|...', '|', 91)
+#2 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Validation\Validation.php(138): CodeIgniter\Validation\Validation->splitRules(Array)
+#3 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#4 C:\xampp\htdocs\TugasUAS\app\Controllers\User.php(41): CodeIgniter\Controller->validate(Array)
+#5 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\User->insert()
+#6 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\TugasUAS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-22 02:44:13 --> strpos(): Offset not contained in string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strpos(): Offse...', 'C:\\xampp\\htdocs...', 702, Array)
+#1 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Validation\Validation.php(702): strpos('uploaded[foto]|...', '|', 91)
+#2 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Validation\Validation.php(138): CodeIgniter\Validation\Validation->splitRules(Array)
+#3 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#4 C:\xampp\htdocs\TugasUAS\app\Controllers\User.php(41): CodeIgniter\Controller->validate(Array)
+#5 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\User->insert()
+#6 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\TugasUAS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-22 02:44:38 --> strpos(): Offset not contained in string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strpos(): Offse...', 'C:\\xampp\\htdocs...', 702, Array)
+#1 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Validation\Validation.php(702): strpos('uploaded[foto]|...', '|', 91)
+#2 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Validation\Validation.php(138): CodeIgniter\Validation\Validation->splitRules(Array)
+#3 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#4 C:\xampp\htdocs\TugasUAS\app\Controllers\User.php(41): CodeIgniter\Controller->validate(Array)
+#5 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\User->insert()
+#6 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\TugasUAS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-22 02:44:52 --> strpos(): Offset not contained in string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strpos(): Offse...', 'C:\\xampp\\htdocs...', 702, Array)
+#1 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Validation\Validation.php(702): strpos('uploaded[foto]|...', '|', 91)
+#2 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Validation\Validation.php(138): CodeIgniter\Validation\Validation->splitRules(Array)
+#3 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#4 C:\xampp\htdocs\TugasUAS\app\Controllers\User.php(41): CodeIgniter\Controller->validate(Array)
+#5 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\User->insert()
+#6 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\TugasUAS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-22 02:47:02 --> strpos(): Offset not contained in string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strpos(): Offse...', 'C:\\xampp\\htdocs...', 702, Array)
+#1 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Validation\Validation.php(702): strpos('uploaded[foto]|...', '|', 91)
+#2 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Validation\Validation.php(138): CodeIgniter\Validation\Validation->splitRules(Array)
+#3 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#4 C:\xampp\htdocs\TugasUAS\app\Controllers\User.php(41): CodeIgniter\Controller->validate(Array)
+#5 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\User->insert()
+#6 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\TugasUAS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-22 02:48:05 --> strpos(): Offset not contained in string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strpos(): Offse...', 'C:\\xampp\\htdocs...', 702, Array)
+#1 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Validation\Validation.php(702): strpos('uploaded[foto]|...', '|', 91)
+#2 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Validation\Validation.php(138): CodeIgniter\Validation\Validation->splitRules(Array)
+#3 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#4 C:\xampp\htdocs\TugasUAS\app\Controllers\User.php(41): CodeIgniter\Controller->validate(Array)
+#5 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\User->insert()
+#6 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\TugasUAS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2021-12-22 22:29:02 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2021-12-22 22:29:02 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\TugasUAS\app\Models\Model_auth.php(14): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\TugasUAS\app\Controllers\Auth.php(44): App\Models\Model_auth->login('teguh@gmail.com', '1234')
+#4 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Auth->login()
+#5 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\TugasUAS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2021-12-22 22:29:36 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2021-12-22 22:29:36 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\TugasUAS\app\Models\Model_auth.php(14): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\TugasUAS\app\Controllers\Auth.php(44): App\Models\Model_auth->login('teguh@gmail.com', '1234')
+#4 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Auth->login()
+#5 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\TugasUAS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2021-12-22 22:30:28 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2021-12-22 22:30:28 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\TugasUAS\app\Models\Model_auth.php(14): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\TugasUAS\app\Controllers\Auth.php(44): App\Models\Model_auth->login('realdy@gmail.co...', '1234')
+#4 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Auth->login()
+#5 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\TugasUAS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2021-12-22 22:36:45 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2021-12-22 22:36:45 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\TugasUAS\app\Models\Model_auth.php(14): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\TugasUAS\app\Controllers\Auth.php(44): App\Models\Model_auth->login('realdy@gmail.co...', '1234')
+#4 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Auth->login()
+#5 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\TugasUAS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-12-22 22:52:36 --> syntax error, unexpected 'id_user' (T_STRING), expecting ')'
+#0 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('user/v_edit', Array, true)
+#2 C:\xampp\htdocs\TugasUAS\app\Views\layout\v_content.php(3): view('user/v_edit')
+#3 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('layout/v_conten...', Array, true)
+#6 C:\xampp\htdocs\TugasUAS\app\Views\layout\v_wrapper.php(5): view('layout/v_conten...')
+#7 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#10 C:\xampp\htdocs\TugasUAS\app\Controllers\User.php(120): view('layout/v_wrappe...', Array)
+#11 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\User->edit('4')
+#12 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#13 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\TugasUAS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#15 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+ERROR - 2021-12-22 23:35:24 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2021-12-22 23:35:24 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\TugasUAS\app\Models\Model_dep.php(13): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\TugasUAS\app\Controllers\User.php(116): App\Models\Model_dep->all_data()
+#4 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\User->edit('1')
+#5 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#6 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\TugasUAS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2021-12-22 23:35:28 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2021-12-22 23:35:28 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\TugasUAS\app\Models\Model_user.php(14): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\TugasUAS\app\Controllers\User.php(22): App\Models\Model_user->all_data()
+#4 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\User->index()
+#5 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#6 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\TugasUAS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\TugasUAS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
