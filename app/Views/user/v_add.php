@@ -4,7 +4,7 @@
     <div class="col-md-6">
         <div class="box box-primary box-solid">
             <div class="box-header with-border">
-                <h3 class="box-title">add Admin</h3>
+                <h3 class="box-title">add User</h3>
 
 
                 <!-- /.box-tools -->
@@ -26,7 +26,7 @@
                 <?php echo form_open_multipart('user/insert'); ?>
 
                 <div class="form-group">
-                    <label>Nama Admin</label>
+                    <label>Nama User</label>
                     <input name="nama_user" class="form-control" placeholder="Nama Admin">
                 </div>
 
@@ -45,6 +45,7 @@
                     <select name="level" class="form-control">
                         <option value="">--Pilih Level--</option>
                         <option value="1">Admin</option>
+                        <option value="2">User</option>
 
                     </select>
                 </div>

@@ -4,10 +4,13 @@
             <div class="box-header with-border">
                 <h3 class="box-title">Data Category</h3>
 
+                <?php if (session()->get('level') == 1){ ?>
                 <div class="box-tools pull-right">
                     <button type="button" class="btn btn-primary btn-sm btn-flat" data-toggle="modal" data-target="#add">
                         <i class="fa fa-plus"></i> Add</button>
-                </div>
+                </div> 
+                <?php } ?>
+
                 <!-- /.box-tools -->
             </div>
             <!-- /.box-header -->
@@ -26,7 +29,9 @@
                         <tr>
                             <th width="80px">No</th>
                             <th>Category</th>
+                            <?php if (session()->get('level') == 1){ ?>
                             <th width="100px">Action</th>
+                            <?php } ?>
                         </tr>
                     </thead>
                     <tbody>
@@ -35,10 +40,12 @@
                             <tr>
                                 <td><?= $no++; ?></td>
                                 <td><?= $value['nama_kategori']; ?></td>
+                                <?php if (session()->get('level') == 1){ ?>
                                 <td class="text-center">
                                     <button class="btn btn-xs btn-warning" data-toggle="modal" data-target="#edit<?= $value['id_kategori']; ?>">Edit</button>
                                     <button class="btn btn-xs btn-danger" data-toggle="modal" data-target="#delete<?= $value['id_kategori']; ?>">Delete</button>
                                 </td>
+                                <?php } ?>
                             </tr>
                         <?php } ?>
                     </tbody>
@@ -60,6 +67,7 @@
                     <span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title">Add Category</h4>
             </div>
+            
             <div class="modal-body">
                 <?php
                 echo form_open('kategori/add')

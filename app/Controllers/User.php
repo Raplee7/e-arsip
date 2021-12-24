@@ -18,7 +18,7 @@ class User extends BaseController
     public function index()
     {
         $data = array(
-            'title' => 'Admin',
+            'title' => 'User',
             'user' => $this->Model_user->all_data(),
             'isi'    => 'user/v_index'
         );

@@ -4,10 +4,12 @@
             <div class="box-header with-border">
                 <h3 class="box-title">Data Departement</h3>
 
+                <?php if (session()->get('level') == 1){ ?>
                 <div class="box-tools pull-right">
                     <button type="button" class="btn btn-primary btn-sm btn-flat" data-toggle="modal" data-target="#add">
                         <i class="fa fa-plus"></i> Add</button>
                 </div>
+                <?php } ?>
                 <!-- /.box-tools -->
             </div>
             <!-- /.box-header -->
@@ -26,7 +28,9 @@
                         <tr>
                             <th width="80px">No</th>
                             <th>Departement</th>
+                            <?php if (session()->get('level') == 1){ ?>
                             <th width="100px">Action</th>
+                            <?php } ?>
                         </tr>
                     </thead>
                     <tbody>
@@ -35,10 +39,14 @@
                             <tr>
                                 <td><?= $no++; ?></td>
                                 <td><?= $value['nama_dep']; ?></td>
+
+                                <?php if (session()->get('level') == 1){ ?>
                                 <td class="text-center">
                                     <button class="btn btn-xs btn-warning" data-toggle="modal" data-target="#edit<?= $value['id_dep']; ?>">Edit</button>
                                     <button class="btn btn-xs btn-danger" data-toggle="modal" data-target="#delete<?= $value['id_dep']; ?>">Delete</button>
                                 </td>
+                                <?php } ?>
+
                             </tr>
                         <?php } ?>
                     </tbody>

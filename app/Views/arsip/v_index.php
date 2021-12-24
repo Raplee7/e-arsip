@@ -3,7 +3,7 @@
     <div class="col-md-12">
         <div class="box box-primary box-solid">
             <div class="box-header with-border">
-                <h3 class="box-title">Data User</h3>
+                <h3 class="box-title">Data Arsip</h3>
 
                 <div class="box-tools pull-right">
                     <a href="<?= base_url('Arsip/add') ?>" class="btn btn-success btn-sm btn-flat"><i class="fa fa-plus">Add</i>
@@ -33,7 +33,9 @@
                             <th>User</th>
                             <th>Departemen</th>
                             <th>File</th>
+                            <?php if (session()->get('level') == 1){ ?>
                             <th width="100px">Aksi</th>
+                            <?php } ?>
                         </tr>
                     </thead>
                     <tbody>
@@ -53,10 +55,14 @@
                                 <td><a href="<?= base_url('Arsip/viewpdf/' . $value['id_arsip']) ?>"><i class="fa fa-file-pdf-o fa-2x label-danger"></i></a><br>
                                 <?= number_format($value['ukuran_file']); ?> Byte
                             </td>
+
+                            <?php if (session()->get('level') == 1){ ?>
                                 <td class="text-center">
                                    <a href="<?= base_url('Arsip/edit/' . $value['id_arsip']) ?>" class=" btn btn-warning">Edit</a>
                                     <button class="btn btn-danger" data-toggle="modal" data-target="#delete<?= $value['id_arsip'] ?>">Delete</button>
                                 </td>
+                            <?php } ?>
+
                             </tr>
 
                         <?php } ?>

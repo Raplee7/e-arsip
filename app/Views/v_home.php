@@ -4,12 +4,13 @@
         <div class="small-box bg-red">
             <div class="inner">
                 <h3><?= $tot_arsip ?></h3>
-                <p>Document</p>
+
+                <p>Arsip</p>
             </div>
             <div class="icon">
                 <i class="fa fa-file-pdf-o"></i>
             </div>
-            <a href="<?= base_url('arsip') ?>" class="small-box-footer">View Detail <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="<?= base_url('Arsip') ?>" class="small-box-footer">View Detail <i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
 
@@ -19,12 +20,12 @@
             <div class="inner">
                 <h3><?= $tot_kategori ?></h3>
 
-                <p>Category</p>
+                <p>Kategori</p>
             </div>
             <div class="icon">
-                <i class="fa fa-bookmark-o"></i>
+                <i class="fa fa-cubes"></i>
             </div>
-            <a href="<?= base_url('kategori') ?>" class="small-box-footer">View Detail <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="<?= base_url('Kategori') ?>" class="small-box-footer"> View Detail <i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
 
@@ -34,7 +35,7 @@
             <div class="inner">
                 <h3><?= $tot_dep ?></h3>
 
-                <p>Departement</p>
+                <p>Departemen</p>
             </div>
             <div class="icon">
                 <i class="fa fa-building-o"></i>
@@ -49,15 +50,16 @@
             <div class="inner">
                 <h3><?= $tot_user ?></h3>
 
-                <p>Admin</p>
+                <p>User</p>
             </div>
             <div class="icon">
-                <i class="fa fa-user"></i>
+                <i class="fa fa-users"></i>
             </div>
-            <a href="<?= base_url('user') ?>" class="small-box-footer">View Detail <i class="fa fa-arrow-circle-right"></i></a>
-
+            <a href="<?= base_url('user') ?>" class="small-box-footer"> View Detail <i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
 
-
 </div>
+
+<!-- TEST -->
+

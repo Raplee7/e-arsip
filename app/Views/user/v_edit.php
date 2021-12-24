@@ -26,7 +26,7 @@
                 <?php echo form_open_multipart('user/update/' . $user['id_user']); ?>
 
                 <div class="form-group">
-                    <label>Nama Admin</label>
+                    <label>Nama User</label>
                     <input name="nama_user" value="<?= $user['nama_user'] ?>" class="form-control" placeholder="Nama Admin">
                 </div>
 

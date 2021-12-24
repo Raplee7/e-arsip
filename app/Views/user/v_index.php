@@ -2,12 +2,14 @@
     <div class="col-md-12">
         <div class="box box-primary box-solid">
             <div class="box-header with-border">
-                <h3 class="box-title">Data Admin</h3>
+                <h3 class="box-title">Data User</h3>
 
+                <?php if (session()->get('level') == 1){ ?>
                 <div class="box-tools pull-right">
                     <a href="<?= base_url('user/add') ?>" class="btn btn-primary btn-sm btn-flat">
                         <i class="fa fa-plus"></i> Add</a>
                 </div>
+                <?php } ?>
                 <!-- /.box-tools -->
             </div>
             <!-- /.box-header -->
@@ -32,7 +34,11 @@
                             <th>Level</th>
                             <th>Departement</th>
                             <th>Foto</th>
+
+                            <?php if (session()->get('level') == 1){ ?>
                             <th width="100px">Action</th>
+                            <?php } ?>
+
                         </tr>
                     </thead>
                     <tbody>
@@ -51,10 +57,14 @@
                                 </td>
                                 <td><?= $value['nama_dep']; ?></td>
                                 <td><img src="<?= base_url('foto/' . $value['foto']) ?>" width="80px"></td>
+                                
+                                <?php if (session()->get('level') == 1){ ?>
                                 <td class="text-center">
                                     <a href="<?= base_url('user/edit/' . $value['id_user']) ?>" class="btn btn-xs btn-warning">Edit</a>
                                     <button class="btn btn-xs btn-danger" data-toggle="modal" data-target="#delete<?= $value['id_user']; ?>">Delete</button>
                                 </td>
+                                <?php } ?>
+                            
                             </tr>
                         <?php } ?>
                     </tbody>
