@@ -31,7 +31,6 @@
                             <th>Upload</th>
                             <th>Update</th>
                             <th>User</th>
-                            <th>Departemen</th>
                             <th>File</th>
                             <?php if (session()->get('level') == 1){ ?>
                             <th width="100px">Aksi</th>
@@ -51,7 +50,7 @@
                                 <td><?= $value['tgl_upload']; ?></td>
                                 <td><?= $value['tgl_update']; ?></td>
                                 <td><?= $value['nama_user']; ?></td>
-                                <td><?= $value['nama_dep']; ?></td>
+                                
                                 <td><a href="<?= base_url('Arsip/viewpdf/' . $value['id_arsip']) ?>"><i class="fa fa-file-pdf-o fa-2x label-danger"></i></a><br>
                                 <?= number_format($value['ukuran_file']); ?> Byte
                             </td>

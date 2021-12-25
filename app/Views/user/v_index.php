@@ -30,7 +30,9 @@
                             <th width="80px">No</th>
                             <th>Nama </th>
                             <th>E-Mail</th>
+                            <?php if (session()->get('level') == 1){ ?>
                             <th>Password</th>
+                            <?php } ?>
                             <th>Level</th>
                             <th>Departement</th>
                             <th>Foto</th>
@@ -48,7 +50,9 @@
                                 <td><?= $no++; ?></td>
                                 <td><?= $value['nama_user']; ?></td>
                                 <td><?= $value['email']; ?></td>
-                                <td><?= $value['password']; ?></td>
+                                <?php if (session()->get('level') == 1){ ?>
+                                <td><?= md5($value['password']); ?></td>
+                                <?php } ?>
                                 <td><?php if ($value['level'] == 1) {
                                         echo 'Admin';
                                     } else {
